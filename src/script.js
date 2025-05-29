@@ -23,17 +23,18 @@ const contactBook = {
       group: "familj",
     },
   ],
+  contact,
 };
 
 // Ange en grupp
-let groupToShow = "arbete";
+let groupToShow;
 
 function showContacts(contactBook, groupToShow) {
   // Rör ej denna kod
   let results = [];
-  for (let workies of contactBook.contacts) {
-    if (workies.group === groupToShow) {
-      results.push(`${workies.name} ${workies.phone}`);
+  for (let contact of contactBook.contacts) {
+    if (contact.group === groupToShow) {
+      results.push(`${contact.name} ${contact.phone}`);
     }
   }
 
