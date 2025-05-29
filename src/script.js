@@ -30,16 +30,15 @@ let groupToShow = "arbete";
 
 function showContacts(contactBook, groupToShow) {
   // Rör ej denna kod
-  let results = [];
   for (let contact of contactBook.contacts) {
     if (contact.group === groupToShow) {
-      results.push(`${contact.name} ${contact.phone}`);
+      return `${contact.name} ${contact.phone}`;
     }
   }
 
   // Loopar igenom alla kontakter och jämför grupp
 
-  return results.join(" "); // här ska sträng med namn och telefonnummer visas i form av string interpolation
+  return; // här ska sträng med namn och telefonnummer visas i form av string interpolation
 }
 
 // Rör ej denna kod
