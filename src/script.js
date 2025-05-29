@@ -39,7 +39,7 @@ function showContacts(contactBook, groupToShow) {
 
   // Loopar igenom alla kontakter och jämför grupp
 
-  return results.join("\n"); // här ska sträng med namn och telefonnummer visas i form av string interpolation
+  return results.join(" "); // här ska sträng med namn och telefonnummer visas i form av string interpolation
 }
 
 // Rör ej denna kod
