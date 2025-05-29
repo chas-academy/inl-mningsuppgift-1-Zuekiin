@@ -23,7 +23,6 @@ const contactBook = {
       group: "familj",
     },
   ],
-  contact,
 };
 
 // Ange en grupp
