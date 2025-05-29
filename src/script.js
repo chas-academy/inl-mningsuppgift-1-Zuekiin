@@ -24,24 +24,23 @@ const contactBook = {
     },
   ],
 };
-  
-  // Ange en grupp
-  let groupToShow;
-  
 
+// Ange en grupp
+let groupToShow = "arbete";
 
+function showContacts(contactBook, groupToShow) {
+  // Rör ej denna kod
+  let results = [];
+  for (let workies of contactBook.contacts) {
+    if (workies.group === groupToShow) {
+      results.push(`${workies.name} ${workies.phone}`);
+    }
+  }
 
-function showContacts(contactBook, groupToShow) { // Rör ej denna kod
+  // Loopar igenom alla kontakter och jämför grupp
 
-
-
-    // Loopar igenom alla kontakter och jämför grupp
-   
-    return  // här ska sträng med namn och tekefonnummer visas i form av string interpolation
-
-
+  return results.join(); // här ska sträng med namn och telefonnummer visas i form av string interpolation
 }
-
 
 // Rör ej denna kod
 showContacts(contactBook, groupToShow);
